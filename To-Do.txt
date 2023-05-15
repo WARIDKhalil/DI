@@ -1,0 +1,10 @@
+﻿#######
+ TO DO
+#######
+
++ Handle an instance which requires other injectable service 
+  => Idea:
+	 - Get the actualType's constructor (should be one if it requires another services)
+	 - Get the ctor parameters and for each one create an instance
+	 - Save the instances as an array of objects
+	 - Use it as a second parameter in Actiovator.CreateInstance(...)
